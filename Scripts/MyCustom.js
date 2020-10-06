@@ -13,5 +13,34 @@ function isPalindrome() {
     else {
         $("#palResult").html(word + " " + "is not a palindrome");
     }
+    
 
 }
+
+//function reverseWord() {
+//    let inputWord = document.getElementById("reverseString").value;
+//    let reverseWord = "";
+//    for (let loop = inputWord.length - 1; loop >= 0; loop--) {
+//        reverseWord += lowerInput.charAt(loop);
+//    }
+//    let otherReverse = lowerInput.split("").reverse().join("");
+//    if (lowerInput == reverseWord) {
+//        alert("otherReverse");
+//    }
+//    else {
+//        alert("try Again");
+//    }
+//    document.getElementById()
+//}
+
+//document.getElementById("flip").addEventListener("click", function () {
+//    let inputWord = document.getElementById("reverseString").value
+
+
+//    let reverseWord = ""
+//    for (let loop = 0, loop <= 10; loop++) {
+//        reverseWord += loop;
+//    }
+
+//    document.getElementById("reverseOutput").innerHTML = reverseWord;
+//})
