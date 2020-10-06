@@ -23,14 +23,14 @@ function isPalindrome() {
     for (let loop = inpuWord.length - 1; loop >= 0; loop--) {
         reverseWord += inpuWord.charAt(loop);
     }
-    let inpuWord = inpuWord.split("").reverse().join("");
+    let palResult = inpuWord.split("").reverse().join("");
     if (inpuWord == reverseWord) {
-        alert("palResult");
+        document.getElementById("palResult ").innerHTML = palResult ;
     }
     else {
         alert("Wrong");
     }
-    document.getElementById("myPalindrome").innerHTML = palResult;
+    //document.getElementById("myPalindrome").innerHTML = palResult;
 }
 
 //document.getElementById("flip").addEventListener("click", function () {
