@@ -25,7 +25,7 @@ function isPalindrome() {
     }
     let palResult = inpuWord.split("").reverse().join("");
     if (inpuWord == reverseWord) {
-        document.getElementById("palResult ").innerHTML = palResult ;
+        document.getElementById("palResult").innerHTML = palResult;
     }
     else {
         alert("Wrong");
