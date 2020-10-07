@@ -67,10 +67,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\prism.css" />
     <Content Include="Content\styles.css" />
+    <Content Include="Code.html" />
     <Content Include="Index.html" />
     <Content Include="Scripts\jqBootstrapValidation.js" />
     <Content Include="Scripts\MyCustom.js" />
+    <Content Include="Scripts\prism.js" />
     <Content Include="Scripts\scripts.js" />
     <Content Include="Web.config" />
   </ItemGroup>

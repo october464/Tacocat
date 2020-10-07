@@ -26,11 +26,11 @@ function isPalindrome() {
     let palResult = inpuWord.split("").reverse().join("");
     if (inpuWord == reverseWord) {
         document.getElementById("palResult").innerHTML = palResult;
+        return palResult;
     }
     else {
-        alert("Wrong");
+        alert("Your word is not a palindrome");
     }
-    //document.getElementById("myPalindrome").innerHTML = palResult;
 }
 
 //document.getElementById("flip").addEventListener("click", function () {
