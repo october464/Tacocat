@@ -54,7 +54,7 @@
             <div class="col text-center">
                 <!--want to prevent the user from entering anything other than a-z A-Z-->
                 <h1 class="mt-5">Tacocat</h1>
-                <input type="text" id="myPalindrome" placeholder="Enter your word" />
+                <input class="lettersOnly" type="text" id="myPalindrome" placeholder="Enter your word" />
                 <button class="btn-primary" onclick="isPalindrome(); document.getElementById('myPalindrome').value = ''">Click me</button>
                 <span id="palResult">Palindrome goes here</span>
 
@@ -71,21 +71,53 @@
 
 
      //First wire  up an event listener that listens for the ONKEYPRESS event
-        
-        document.getElementById("myPalindrome").addEventListener("keypress", function (evt) { 
-            
-             //Assign a value to a character
-            // and the value that is assigned will be evt.which or evt.keyCode
+
+
+        document.querySelectorAll(".lettersOnly").addEventListener("keydown", function (evt) {
+
+            //Assign a value to a character
+            //and the value that is assigned will be evt.which or evt.keyCode
             //If(evt.which)== true then use evt.which else evt.KeyCode
-                var character = (evt.which) ? evt.which : evt.keyCode 
-                if (character >= 96 && character <= 122 || character >= 65 && character <= 90) {
-                    return true;
-                }
-                else {
-                    return false;
-                }
+
+            //assings some value to the variable named "character"
+            //That value will either be e.which or e.keyCode depending on whether e.which is defined
+            var character = e.keyCode;
+            var character2 = e.which;
+            console.log(`e.keyCode=${character}`);
+            console.log(`e.keyCode=${character2}`);
+            //var character = (evt.which) ? evt.which : evt.keyCode
+            //console.log(character)
+            if (character >= 96 && character <= 122 || character >= 65 && character <= 90 || character == 8) {
+                return true;
+            }
+            else {
+                //what does this code do?
+                evt.preventDefault();
+                return false;
+            }
 
         });
+
+        ////is by class so that all inputs with that class dont show numbers when key is pressed
+        //document.getElementsByClassName("lettersOnly").addEventListener("keydown", function (evt) { 
+            
+        //     //Assign a value to a character
+        //    //and the value that is assigned will be evt.which or evt.keyCode
+        //   //If(evt.which)== true then use evt.which else evt.KeyCode
+          
+        //    //I will allow what you just typed into the text box if and only if it is either a-z or A-Z
+        //    var character = (evt.which) ? evt.which : evt.keyCode
+        //    console.log(character)
+        //    if (character >= 96 && character <= 122 || character >= 65 && character <= 90 || character == 8)  {
+        //            return true;
+        //    }
+        //    else {
+        //    //what does this code do?
+        //      evt.preventDefault();
+        //      return false;
+        //    }
+            
+        //});
         
         
     </script>
