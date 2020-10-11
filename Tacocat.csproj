@@ -72,6 +72,7 @@
     <Content Include="Code.html" />
     <Content Include="Content\TacocatStyle.css" />
     <Content Include="Images\favicon-32x32.png" />
+    <Content Include="Index.html" />
     <Content Include="Scripts\jqBootstrapValidation.js" />
     <Content Include="Scripts\MyCustom.js" />
     <Content Include="Scripts\prism.js" />
