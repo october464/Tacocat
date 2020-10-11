@@ -4,14 +4,16 @@
 
 
     <meta charset="utf-8" />
-    <title>Code</title>
+    <title>Tacocat Code</title>
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="icon" href="Images/favicon-16x16.png" type="image/gif" sizes="16x16">
     <link href="Content/styles.css" rel="stylesheet" />
+    <link href="Content/TacocatStyle.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="Images/favicon-32x32.png" />
     <link href="Content/prism.css" rel="stylesheet" />
 </head>
-<body>
+<body class="back">
 
 
 
@@ -50,10 +52,10 @@
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <h1 class="mt-5">This Page Shows JS Code</h1>
+                <h1 class="mt-5">The JavaScript Code Is Presented Below</h1>
                 <p class="lead">This page uses Prism.js to markup the code to the page.</p>
                 <pre>
-<code class="language-js line-numbers">function isPalindrome() {
+<code class="line-numbers language-js ">function isPalindrome() {
     let inpuWord = document.getElementById("myPalindrome").value;
     let reverseWord = "";
     for (let loop = inpuWord.length - 1; loop >= 0; loop--) {

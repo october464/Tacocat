@@ -70,6 +70,8 @@
     <Content Include="Content\prism.css" />
     <Content Include="Content\styles.css" />
     <Content Include="Code.html" />
+    <Content Include="Content\TacocatStyle.css" />
+    <Content Include="Images\favicon-32x32.png" />
     <Content Include="Scripts\jqBootstrapValidation.js" />
     <Content Include="Scripts\MyCustom.js" />
     <Content Include="Scripts\prism.js" />
@@ -82,6 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="site.webmanifest" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
