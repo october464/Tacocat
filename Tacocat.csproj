@@ -68,7 +68,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\prism.css" />
-    <Content Include="Content\styles.css" />
     <Content Include="Code.html" />
     <Content Include="Content\TacocatStyle.css" />
     <Content Include="Images\favicon-32x32.png" />
